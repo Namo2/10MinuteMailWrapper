@@ -32,6 +32,12 @@ public class MailContent {
     @JsonProperty("html")
     private String[] html;
 
+    @JsonProperty("plain")
+    private String[] plain;
+
+    @JsonProperty("plain_link")
+    private String[] plainLink;
+
     public String getFrom() {
         return from;
     }
@@ -104,9 +110,26 @@ public class MailContent {
         this.html = html;
     }
 
-    public MailContent() {}
+    public String[] getPlain() {
+        return plain;
+    }
 
-    public MailContent(String from, String to, String avatar, String subject, String dateTime, String dateTime2, int timestamp, String[] urls, String[] html) {
+    public void setPlain(String[] plain) {
+        this.plain = plain;
+    }
+
+    public String[] getPlainLink() {
+        return plainLink;
+    }
+
+    public void setPlainLink(String[] plainLink) {
+        this.plainLink = plainLink;
+    }
+
+    public MailContent() {
+    }
+
+    public MailContent(String from, String to, String avatar, String subject, String dateTime, String dateTime2, int timestamp, String[] urls, String[] html, String[] plain, String[] plainLink) {
         this.from = from;
         this.to = to;
         this.avatar = avatar;
@@ -116,5 +139,7 @@ public class MailContent {
         this.timestamp = timestamp;
         this.urls = urls;
         this.html = html;
+        this.plain = plain;
+        this.plainLink = plainLink;
     }
 }
