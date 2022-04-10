@@ -7,13 +7,10 @@ A Simple Java HTTP API wrapper for <a href="https://10minutemail.net/">10minutem
 
 ## Installation
 
-### Install via the Maven Central Repository
-`Will Follow soon`
-
 ### Install manually
 <a href="https://github.com/Namo2/10MinuteMailWrapper/releases/latest">Browse latest Github releases</a>
 </br>
-After the download unzip the file and add it as a library into your project.
+After the download unzip the archive and add the Jar as a library into your project.
 
 ## Getting started
 
